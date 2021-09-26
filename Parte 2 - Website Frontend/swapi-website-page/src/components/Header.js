@@ -1,10 +1,6 @@
 import React from 'react';
 
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
+import { AppBar, Box, Toolbar, IconButton, Typography } from '@material-ui/core';
 
 import logo from '../multimedia/c3p0_logo.png';
 
