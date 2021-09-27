@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 
+import { Typography } from '@material-ui/core';
+
 class TablaPersonajes extends Component {
   render() {
     return (
       <div className="Personajes">
-        <h1 className="Personajes__Titulo">SWAPI</h1>
-        <p>Bienvenido al Universo Star Wars, da click en la ficha del personaje que desees consultar.</p>
-        <div className="Personajes__Lista">
-        </div>
+        <Typography variant="h1" align="center" color="inherit" component="div">
+           SWAPI
+        </Typography>
+        <Typography variant="subtitle1" align="center" color="inherit" component="div">
+          Bienvenido al Universo Star Wars, da click en la ficha del personaje que desees consultar.
+        </Typography>
       </div>
     );
   }
