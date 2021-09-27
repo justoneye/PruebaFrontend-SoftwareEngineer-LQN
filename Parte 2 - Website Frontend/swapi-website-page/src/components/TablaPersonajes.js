@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
 import { Typography } from '@material-ui/core';
-
 import Masonry from 'react-masonry-css';
+
+import FichaPersonaje from '../components/FichaPersonaje.js';
 
 class TablaPersonajes extends Component {
   render() {
@@ -15,7 +16,8 @@ class TablaPersonajes extends Component {
           Bienvenido al Universo Star Wars, da click en la ficha del personaje que desees consultar.
         </Typography>
         
-        <Masonry breakpointCols={3} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
+        <Masonry breakpointCols={4} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
+          <FichaPersonaje/>
         </Masonry>
       </div>      
     );
