@@ -11,10 +11,9 @@ export default function FichaPersonaje() {
         <CardMedia
           component="img"
           height="330"
+          image={logo}
           alt="Foto Personaje"
         />
-          <img src={logo} className="logo" alt="Foto Personaje"/>
-        <CardMedia/>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Nombre Personaje
