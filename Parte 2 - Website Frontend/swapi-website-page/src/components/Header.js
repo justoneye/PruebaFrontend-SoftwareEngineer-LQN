@@ -19,7 +19,7 @@ export default function ButtonAppBar() {
             <img src={logo} className="logo" alt="Graph Side logo"/>
           </IconButton>
           <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
-            ¡Welcome to the Graph Side!
+            Join the Graph Side!
           </Typography>
         </Toolbar>
       </AppBar>
