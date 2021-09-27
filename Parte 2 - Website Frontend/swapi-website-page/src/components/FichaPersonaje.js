@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { Card, CardContent, CardMedia, Typography, Typography } from '@material-ui/core';
-import { CardActionArea } from '@mui/material';
+import { Card, CardContent, CardActionArea, CardMedia, Typography } from '@material-ui/core';
+
+import logo from '../multimedia/c3p0_logo.png';
 
 export default function FichaPersonaje() {
   return (
