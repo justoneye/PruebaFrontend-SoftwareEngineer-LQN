@@ -10,15 +10,12 @@ export default function ButtonAppBar() {
       <AppBar position="static">
         <Toolbar>
           <IconButton
-            size="large"
             edge="start"
-            color="inherit"
             aria-label="menu"
-            sx={{ mr: 2 }}
           >
-            <img src={logo} className="logo" alt="Graph Side logo"/>
+            <img src={logo} className="logo" width="64" alt="Graph Side logo"/>
           </IconButton>
-          <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h3" component="div" sx={{ flexGrow: 1 }}>
             Join the Graph Side!
           </Typography>
         </Toolbar>
