@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import { Typography } from '@material-ui/core';
 
+import Masonry from 'react-masonry-css';
+
 class TablaPersonajes extends Component {
   render() {
     return (
@@ -12,7 +14,10 @@ class TablaPersonajes extends Component {
         <Typography variant="subtitle1" align="center" color="inherit" component="div">
           Bienvenido al Universo Star Wars, da click en la ficha del personaje que desees consultar.
         </Typography>
-      </div>
+        
+        <Masonry breakpointCols={3} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
+        </Masonry>
+      </div>      
     );
   }
 }
