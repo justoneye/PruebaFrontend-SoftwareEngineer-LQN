@@ -4,7 +4,7 @@ import { AppBar, Box, Toolbar, IconButton, Typography } from '@material-ui/core'
 
 import logo from '../multimedia/c3p0_logo.png';
 
-export default function ButtonAppBar() {
+export default function Header() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
