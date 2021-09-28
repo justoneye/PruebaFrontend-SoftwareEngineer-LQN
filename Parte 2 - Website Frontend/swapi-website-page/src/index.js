@@ -1,11 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import { ApolloClient, ApolloProvider, HttpLink, InMemoryCache } from '@apollo/client'
+
 import Home from './pages/home.js'
 
+const client = new ApolloClient ({
+  cache: new InMemoryCache(),
+  link: new HttpLink({
+    uri: 'https://graphql.org/swapi-graphql/'
+  })
+})
+
 ReactDOM.render(
-  <React.StrictMode>
+  <ApolloProvider client={client}>
     <Home />
-  </React.StrictMode>,
+  </ApolloProvider>,
   document.getElementById('root')
 );
