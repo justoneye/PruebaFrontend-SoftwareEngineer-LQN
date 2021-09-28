@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { Typography } from '@material-ui/core';
 import Masonry from 'react-masonry-css';
 
+import '../styles/index.css'
+
 import FichaPersonaje from '../components/FichaPersonaje.js';
 
 class TablaPersonajes extends Component {
