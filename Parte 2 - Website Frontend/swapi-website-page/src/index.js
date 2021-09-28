@@ -8,7 +8,8 @@ import Home from './pages/home.js'
 const client = new ApolloClient ({
   cache: new InMemoryCache(),
   link: new HttpLink({
-    uri: 'https://graphql.org/swapi-graphql/'
+    uri: 'https://swapi.loquenecesito.co/graphql/',
+    credentials: 'omit'
   })
 })
 
