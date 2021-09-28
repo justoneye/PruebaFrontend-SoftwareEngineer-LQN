@@ -6,6 +6,7 @@
 
 let x;
 
+//Método 1
 const buzzbazz = numero => {
     if (numero % 2 == 0 && numero % 5 == 0) return numero +" "+ "buzz"+" "+ "bazz";
 	if (numero % 2 == 0) return numero +" "+ "buzz";
@@ -14,7 +15,15 @@ const buzzbazz = numero => {
     else return numero
 }
 
+console.log("Método 1");  
 for (x = 1; x <= 100; x++) 
 {
     console.log(buzzbazz(x));   
+}
+
+//Método 2
+console.log("Método 2");  
+for (x = 1; x <= 100; x++) 
+{
+    console.log(x + (x % 2 ? "" : " buzz") + (x % 5 ? "" : " bazz"));
 }
