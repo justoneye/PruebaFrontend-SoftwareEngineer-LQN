@@ -19,11 +19,13 @@ const ALL_PEOPLE = gql`
 
 export default function FichaPersonaje() {
   const { loading, error, data } = useQuery(ALL_PEOPLE)
-  console.log("ALL_PEOPLE", ALL_PEOPLE);
 
-  if(loading) return <p>...</p>
-  if(error) return <p>error</p>
+  if(loading) 
+    return <p>...</p>
+  if(error) 
+    return <p>error</p>
 console.log("data.allPeople", data.allPeople.edges);
+
   return (
     <div>
       {data.allPeople.edges.map((id, name) => (
@@ -32,8 +34,8 @@ console.log("data.allPeople", data.allPeople.edges);
             <CardMedia
               component="img"
               height="330"
-              image={"img"}
-              alt="Foto Personaje"
+              image={`src/multimedia/people/${id}.png`}
+              alt={`Foto ${name}`}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
